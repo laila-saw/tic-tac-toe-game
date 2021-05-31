@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: black;
+}
+
+img{
+    transform: translate(180%,50%);
+}
+
+.playBoard-box,
+.select-box,
+.result-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); 
+}
+
+.select-box{
+   /* display: none; */
+   background: white;   
+    border-radius: 5px;
+    padding: 20px 25px 25px;
+    max-width: 330px;
+    width: 100%;
+}
+.select-box header{
+    text-transform: capitalize;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+    font-size: 23px;
+    font-weight: 600;
+}
+.select-box .title{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 20px 0; 
+}
+
+.select-box .options{
+   display: flex;
+   width: 100%;
+}
+.options button{
+    cursor: pointer;
+    width: 100%;
+    color: white;
+    background: black;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 0;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}.result-box .btn button :hover,
+button:hover{
+    transform:scale(0.9);
+}
+/* play board box styling */
+.playBoard-box{
+    display: none;
+}
+.playBoard-box .details{
+    padding: 7px;
+    background: white;
+    border-radius: 5px;
+}
+.playBoard-box .play-aera{
+    margin-top: 20px;
+}
+.playBoard-box .details .players{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
+
+}
+.playBoard-box .details span{
+width: 100%;
+border-radius: 5px;
+padding: 7px 0;
+font-size: 19px;
+font-weight: 500;
+text-align: center;
+position: relative;
+z-index: 5;
+transition: all 0.3s ease;
+}
+.details span:first-child{
+    color: white;
+}
+.details .slider{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    border-radius: 5px;
+    background: black;
+    z-index: 2;
+    transition: all 0.3s ease;
+}
+.players.active span:first-child{
+    color: black;
+}
+.players.active span:nth-child(2){
+    color: white;
+}
+.players.active .slider{
+    left: 50%;
+}
+
+.playBoard-box section{
+    display: flex;
+}
+.playBoard-box section span{
+background: white;
+height: 80px;
+width: 80px;
+display: block;
+margin: 2px;
+border-radius: 5px;
+font-size: 40px;
+font-weight: 500;
+text-align: center;
+line-height: 80px;
+}
+/* result box  styling */
+.result-box{
+    display: none;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 100%;
+}
+.result-box .won-text{
+    font-size: 25px;
+    font-weight: 500;
+    display: flex;
+}
+.result-box .won-text p{
+    margin: 0 3px;
+    font-weight: 700;
+}
+.result-box .btn{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+}
+.result-box .btn button{
+    cursor: pointer;
+    width: 40%;
+    color: white;
+    background: black;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 0;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
